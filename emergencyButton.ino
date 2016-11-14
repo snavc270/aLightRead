@@ -23,10 +23,19 @@ String story2[138] = {"She", "likes", "it", "She", "is", "like", "me", "Therefor
                     "She", "likes", "it", "She", "is", "like", "me", "Therefore", "I", "might", "really", "like", "it", "I", "think", "I", "like", "it", "I", "show", "it", "to", "her", "She", "is", "like", "me", "She", "likes", "the", "things", 
                     "I", "like", "She", "likes", "it", "So", "I", "might", "really", "like", "it", "I", "like", "it", "I", "show", "it", "to", "her", "She", "likes", "it", "She", "says", "the", "other", "one", "is", "just", "plain", "awful", "She"
                     "is", "like", "me", "She", "likes", "the", "things", "I", "like", "So", "I", "might", "really", "like", "it"}; 
+String story3[28] = {"Into", "how", "small", "a", "place", "the", "word", "judgement", "can", "be", "compressed", "it", "must", "fit", "inside", "the", "brain", "of", "a", "ladybug", "as", "she", 
+                  "before", "my", "eyes", "makes", "a", "decision"}; 
+
+String story4[46] = {"Color", "these", "fish", "Cut", "them," "out", "Punch", "a", "hole", "in", "the", "top", "of", "each", "fish", "Put", "a", "ribbon", "through", "all", "the", "holes",
+                    "Tie", "these", "fish", "together", "Now", "read", "what", "is", "written", "on", "these", "fish", "Jesus", "is", "a", "friend", "Jesus", "gathers", "friends", "I", "am", "a", "friend", "of", "Jesus"}; 
+
+String story5[10] = {"Under", "all", "this", "dirt", "the", "floor", "is", "really", "very", "clean"}; 
+  
+
 void setup() {
   pinMode(7, OUTPUT); digitalWrite(7, LOW);
   // put your setup code here, to run once:
-
+//  Serial.print(story4.length); 
   mySerial.begin(19200);
   printer.begin();
 
