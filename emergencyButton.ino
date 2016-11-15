@@ -65,23 +65,15 @@ void loop() {
 
   switch(storyInt){
     case 1:
-      percentage = map(charInt, 0, 27, 90, 2); 
+      percentage = map(pow(charInt, 2), 0, 729, 90, 2); 
       Serial.println(percentage); 
       {
         if (buttonState != previousButtonState) {
           if (buttonState == 1) {
             int randomNum = random(0, 100);
             
-            if (randomNum < percentage) {
+           if (randomNum < percentage) {
               printer.println(story[charInt]);          
-    //        mySerial.println(story[charInt]);
-              if(percentage> 50){
-                percentage -=10; 
-              }else if (percentage <= 50 && percentage > 10){
-                percentage -=7; 
-              }else if (percentage<= 10 && percentage >2){
-                percentage -= 2; 
-              }
               if (charInt < 27) {
                 charInt ++;
               }
@@ -125,6 +117,7 @@ void loop() {
 //      }
 
       case 3: {
+        percentage = map(pow(charInt, 2), 0, 676, 90, 2); 
         if (buttonState != previousButtonState) {
           if (buttonState == 1) {
             int randomNum = random(0, 100);
@@ -132,13 +125,6 @@ void loop() {
             if (randomNum < percentage) {
               printer.print(story3[charInt]); 
       //        mySerial.println(story[charInt]);
-              if(percentage> 70){
-                percentage -=5; 
-              }else if (percentage <= 70 && percentage > 10){
-                percentage -=3; 
-              }else if (percentage<= 10 && percentage >2){
-                percentage -= 2; 
-              }
               if (charInt < 26) {
                 charInt ++;
               }
@@ -153,6 +139,7 @@ void loop() {
       break; 
       }
       case 4: {
+        percentage = map(pow(charInt, 2), 0, 1936, 90, 2); 
         if (buttonState != previousButtonState) {
           if (buttonState == 1) {
             int randomNum = random(0, 100);
@@ -160,13 +147,6 @@ void loop() {
             if (randomNum < percentage) {
               printer.print(story4[charInt]); 
       //        mySerial.println(story[charInt]);
-              if(percentage> 70){
-                percentage -=5; 
-              }else if (percentage <= 70 && percentage > 10){
-                percentage -=3; 
-              }else if (percentage<= 10 && percentage >2){
-                percentage -= 2; 
-              }
               if (charInt < 44) {
                 charInt ++;
               }
@@ -182,6 +162,7 @@ void loop() {
       }
 
       case 5: {
+        percentage = map(pow(charInt, 2), 0, 64, 90, 2); 
         if (buttonState != previousButtonState) {
           if (buttonState == 1) {
             int randomNum = random(0, 100);
@@ -189,13 +170,6 @@ void loop() {
             if (randomNum < percentage) {
               printer.print(story5[charInt]); 
       //        mySerial.println(story[charInt]);
-              if(percentage> 70){
-                percentage -=5; 
-              }else if (percentage <= 70 && percentage > 10){
-                percentage -=3; 
-              }else if (percentage<= 10 && percentage >2){
-                percentage -= 2; 
-              }
               if (charInt < 8) {
                 charInt ++;
               }
